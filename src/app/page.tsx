@@ -1,6 +1,7 @@
 import Beneficios from "@/components/Beneficios";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
+import Sustentabilidade from "@/components/Sustentabilidade";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Nav/>
       <Hero />
       <Beneficios />
+      <Sustentabilidade />
     </>
   );
 }
