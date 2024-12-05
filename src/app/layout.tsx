@@ -20,9 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth overflow-y-scrol snap-y snap-mandatory">
       <body
-        className={`${poppins.variable} antialiased bg-white overflow-x-hidden`}
+        className={`${poppins.variable} antialiased bg-white overflow-x-hidden `}
       >
         {children}
       </body>

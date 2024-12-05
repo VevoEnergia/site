@@ -64,7 +64,7 @@ const saving = [
 ]
 export default function Beneficios(){
     return (
-        <Section className="py-12">
+        <Section id="beneficios" className="py-12">
             <Subtitle className="mb-8">BENEFÍCIOS</Subtitle>
 
             <Grid cols={3} rows={2} className="my-8">

@@ -1,13 +1,14 @@
 import { ReactNode } from "react";
 
 interface SectionProps{
+    id?: string,
     children?: ReactNode,
     className?: string,
 }
 
-export default function Section({children, className}: SectionProps){
+export default function Section({id, children, className}: SectionProps){
     return (
-        <section className={`${className} w-screen 2xl:px-48`}>
+        <section id={id} className={`${className} min-h-screen w-screen 2xl:px-48 snap-start`}>
             {children}
         </section>
     )
