@@ -12,6 +12,7 @@ export default function Nav() {
       if (window.scrollY > lastScrollY) {
         setScrollingDown(true);
       } else {
+        if(window.scrollY == 0)
         setScrollingDown(false);
       }
       setLastScrollY(window.scrollY);
