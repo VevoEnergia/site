@@ -1,3 +1,4 @@
+import Beneficios from "@/components/Beneficios";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Nav/>
       <Hero />
+      <Beneficios />
     </>
   );
 }

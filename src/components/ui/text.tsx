@@ -28,3 +28,11 @@ export function Paragraph({className, children}:TextProps){
         </p>
     )
 }
+
+export function Span({className, children}: TextProps){
+    return (
+        <span className={`text-md font-normal ${className}`}>
+            {children}
+        </span>
+    )
+}
