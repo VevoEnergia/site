@@ -1,9 +1,9 @@
-import Section from "./ui/section";
-import { Title } from "./ui/text";
-import SolutionCard from "./Solucoes/SolutionCard";
-import ExperienceHighlight from "./Solucoes/ExperienceHighlight";
-import ImageGrid from "./Solucoes/ImageGrid";
-import Grid from "./ui/grid";
+import Section from "../ui/section";
+import { Title } from "../ui/text";
+import SolutionCard from "./SolutionCard";
+import ExperienceHighlight from "./ExperienceHighlight";
+import ImageGrid from "./ImageGrid";
+import Grid from "../ui/grid";
 
 const solutions = [
     { title: "Solução 1", text: "Lorem ipsum dolor sit amet consectetur adipiscing elit." },
