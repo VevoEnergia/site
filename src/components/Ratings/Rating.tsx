@@ -6,6 +6,7 @@ import { IoIosStarOutline } from "react-icons/io";
 
 
 interface RatingProps{
+    id: number,
     src: string,
     name: string,
     rating: number,
@@ -22,7 +23,7 @@ export default function Rating({rating}: {rating: RatingProps}){
                 {Array(5)
                     .fill(0)
                     .map((_, i) => (
-                     i + 1 <= rating.rating ? <IoIosStar key={`start-${rating.name}-${i}`}/> : <IoIosStarOutline />
+                     i + 1 <= rating.rating ? <IoIosStar key={`start-${rating.id}-${i}`}/> : <IoIosStarOutline key={`start-${rating.id}-${i}`}/>
                     ))}
                 </div>
             </div>

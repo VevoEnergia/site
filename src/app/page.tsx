@@ -6,6 +6,8 @@ import Sustentabilidade from "@/components/Sustentabilidade";
 import FAQ from "@/components/FAQ/FAQ";
 import Ratings from "@/components/Ratings/Ratings";
 import Contact from "@/components/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
+
 export default function Home() {
   return (
     <>
@@ -17,6 +19,7 @@ export default function Home() {
       <Ratings />
       <FAQ />
       <Contact />
+      <Footer />
     </>
   );
 }
