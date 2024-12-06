@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import Solucoes from "@/components/Solucoes/Solucoes";
 import Sustentabilidade from "@/components/Sustentabilidade";
 import FAQ from "@/components/FAQ/FAQ";
+import Ratings from "@/components/Ratings/Ratings";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Beneficios />
       <Sustentabilidade />
       <Solucoes />
+      <Ratings />
       <FAQ />
     </>
   );
