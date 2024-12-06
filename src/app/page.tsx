@@ -5,7 +5,7 @@ import Solucoes from "@/components/Solucoes/Solucoes";
 import Sustentabilidade from "@/components/Sustentabilidade";
 import FAQ from "@/components/FAQ/FAQ";
 import Ratings from "@/components/Ratings/Ratings";
-
+import Contact from "@/components/Contact/Contact";
 export default function Home() {
   return (
     <>
@@ -16,6 +16,7 @@ export default function Home() {
       <Solucoes />
       <Ratings />
       <FAQ />
+      <Contact />
     </>
   );
 }
