@@ -1,0 +1,51 @@
+import CTAButton from "../ui/cta-button";
+import Section from "../ui/section";
+import { Subtitle } from "../ui/text";
+import { places, projects } from "@/data/projetos";
+import PlaceCard from "./PlaceCard";
+import Image from "next/image";
+
+export default function OurProjects() {
+  const duplicatedProjects = [...projects, ...projects];
+  return (
+    <Section className="bg-gradient-to-br from-primary from-50% to-yellow-600 space-y-8">
+      <Subtitle className="sm:text-4xl xl:text-5xl 2xl:text-6xl text-secondary">
+        Atendemos sua Necessidade<span className="text-white">.</span>
+      </Subtitle>
+      <div className="flex items-start gap-x-12">
+        {places.map((place, index) => (
+          <PlaceCard key={`place-${index}`} text={place.text} src={place.src} />
+        ))}
+      </div>
+      <Subtitle className="sm:text-4xl xl:text-5xl 2xl:text-6xl text-secondary mt-10">
+        Nossos Projetos<span className="text-white">.</span>
+      </Subtitle>
+      <div className="flex">
+        <div className="flex gap-x-8 whitespace-nowrap animate-scroll">
+          {duplicatedProjects.map((project, index) => (
+            <div
+              key={`project-${index}`}
+              className="relative min-w-72 h-72 flex items-center justify-center overflow-hidden p-1 rounded-[32px] bg-transparent"
+            >
+              <Image
+                src={project.src}
+                alt={`Imagem do projeto ${index}, com vista superior mostrando painéis solares.`}
+                fill
+                sizes=""
+                className="rounded-[32px] object-cover"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="w-full grid place-items-center">
+        <CTAButton
+          variant="ghost"
+          text="Quero minha energia solar!"
+          className="max-w-fit"
+        />
+      </div>
+    </Section>
+  );
+}

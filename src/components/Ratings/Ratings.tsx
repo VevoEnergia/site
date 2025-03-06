@@ -1,13 +1,17 @@
-"use client"
-import Section  from "@/components/ui/section";
+"use client";
+import Section from "@/components/ui/section";
 import Carousel from "./Carousel";
-
-
-export default function Ratings(){
-
-    return (
-        <Section className="!max-h-[480px] !min-h-96 bg-neutral-100 !px-24 !pb-32">
-            <Carousel />
-        </Section>
-    )
+import { Subtitle } from "../ui/text";
+export default function Ratings() {
+  return (
+    <Section
+      id="depoimentos"
+      className="!max-h-[480px] !px-0 !min-h-96 bg-neutral-100 !pb-32 drop-shadow-lg"
+    >
+      <Subtitle className="ms-6 sm:ms-8 lg:ms-32 2xl:ms-60 text-5xl xl:text-6xl text-secondary">
+        Depoimentos<span className="text-primary">.</span>
+      </Subtitle>
+      <Carousel />
+    </Section>
+  );
 }

@@ -1,37 +1,31 @@
-import Section from "../ui/section";
-import { Title } from "../ui/text";
-import SolutionCard from "./SolutionCard";
+// Componetnts
 import ExperienceHighlight from "./ExperienceHighlight";
+import Section from "../ui/section";
+import { Subtitle, Title } from "../ui/text";
+import SolutionCard from "./SolutionCard";
 import ImageGrid from "./ImageGrid";
 import Grid from "../ui/grid";
 
-const solutions = [
-    { title: "Solução 1", text: "Lorem ipsum dolor sit amet consectetur adipiscing elit." },
-    { title: "Solução 2", text: "Lorem ipsum dolor sit amet consectetur adipiscing elit." },
-    { title: "Solução 3", text: "Lorem ipsum dolor sit amet consectetur adipiscing elit." },
-    { title: "Solução 4", text: "Lorem ipsum dolor sit amet consectetur adipiscing elit." },
-    { title: "Solução 5", text: "Lorem ipsum dolor sit amet consectetur adipiscing elit." },
-    { title: "Solução 6", text: "Lorem ipsum dolor sit amet consectetur adipiscing elit." },
-];
+// Data
+import { solutions } from "@/data/solucoes";
 
 export default function Solucoes() {
-    return (
-        <Section className="flex flex-col">
-            <Title>Soluções</Title>
+  return (
+    <Section id="solucoes" className="flex flex-col !pt-24">
+      <Subtitle className="xl:text-6xl text-secondary">
+        Soluções<span className="text-primary">.</span>
+      </Subtitle>
 
-            <Grid cols={3} rows={2} className="mt-8">
-                {solutions.map((solution) => (
-                    <SolutionCard key={solution.title} title={solution.title} text={solution.text} />
-                ))}
-            </Grid>
-
-            <div className="flex items-center justify-between px-32 py-4 mt-24 border rounded-full">
-                <ExperienceHighlight />
-                <ExperienceHighlight />
-                <ExperienceHighlight />
-            </div>
-
-            <ImageGrid images={Array(5).fill(null)}/>
-        </Section>
-    );
+      <Grid cols={3} rows={2} className="mt-8">
+        {solutions.map((solution) => (
+          <SolutionCard
+            key={solution.title}
+            title={solution.title}
+            text={solution.text}
+            src={solution.src}
+          />
+        ))}
+      </Grid>
+    </Section>
+  );
 }
