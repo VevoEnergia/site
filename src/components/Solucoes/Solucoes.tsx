@@ -1,9 +1,7 @@
 // Componetnts
-import ExperienceHighlight from "./ExperienceHighlight";
 import Section from "../ui/section";
-import { Subtitle, Title } from "../ui/text";
+import { Subtitle } from "../ui/text";
 import SolutionCard from "./SolutionCard";
-import ImageGrid from "./ImageGrid";
 import Grid from "../ui/grid";
 
 // Data

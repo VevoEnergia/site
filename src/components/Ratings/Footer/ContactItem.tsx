@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { Title, Span } from "../../ui/text";
 import { IconType } from "react-icons";
 

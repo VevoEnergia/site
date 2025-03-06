@@ -1,9 +1,10 @@
 "use client";
 import { motion, Variants } from "framer-motion";
 import Section from "../ui/section";
-import { Paragraph, Subtitle, Title } from "../ui/text";
+import { Paragraph, Subtitle } from "../ui/text";
 import CTAButton from "../ui/cta-button";
 import Image from "next/image";
+
 const introContact: Variants = {
   hide: {
     opacity: 0,

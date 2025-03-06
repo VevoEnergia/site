@@ -4,7 +4,6 @@ import { Subtitle } from "../../ui/text";
 import { ReactNode } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
-import { FcGoogle } from "react-icons/fc";
 import ClickableIcon from "./ClickableIcon";
 import Image from "next/image";
 import { motion } from "framer-motion";

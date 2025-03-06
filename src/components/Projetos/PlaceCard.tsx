@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Span, Subtitle } from "../ui/text";
+import { Subtitle } from "../ui/text";
 
 interface PlaceCardProps {
   src: string;

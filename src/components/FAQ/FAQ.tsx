@@ -1,4 +1,4 @@
-import { Subtitle, Title } from "../ui/text";
+import { Subtitle } from "../ui/text";
 import Section from "../ui/section";
 import Question from "./Question";
 

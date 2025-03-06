@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { ReactElement, ReactNode } from "react";
-import { IconType } from "react-icons";
+import { ReactNode } from "react";
 
 interface CardProps {
   src: string;

@@ -85,7 +85,7 @@ export default function Beneficios() {
       </div>
 
       <div className="grid grid-cols-2 grid-rows-2 place-items-center min-[1700px]:grid-cols-4 min-[1700px]:grid-rows-1 px-3 2xl:px-12 py-4 mt-24 border gap-y-4 rounded-full bg-white shadow-xl">
-        {diferentials.map((diferential, index) => (
+        {diferentials.map((diferential) => (
           <ExperienceHighlight
             title={diferential.title}
             key={diferential.title}

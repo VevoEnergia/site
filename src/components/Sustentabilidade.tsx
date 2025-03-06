@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Paragraph, Subtitle, Title } from "./ui/text";
+import { Paragraph, Subtitle } from "./ui/text";
 import Section from "./ui/section";
 import CTAButton from "./ui/cta-button";
 
