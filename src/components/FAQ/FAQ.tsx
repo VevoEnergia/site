@@ -6,7 +6,7 @@ import { questions } from "@/data/faq";
 
 export default function FAQ() {
   return (
-    <Section className="h-screen bg-neutral-200">
+    <Section className="bg-[#E0E0E0]">
       <Subtitle className="text-5xl xl:text-6xl text-secondary">
         Perguntas Frequentes<span className="text-primary">.</span>
       </Subtitle>

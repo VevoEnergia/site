@@ -7,7 +7,7 @@ import Image from "next/image";
 const introContact: Variants = {
   hide: {
     opacity: 0,
-    right: "-49%",
+    right: "-40%",
   },
   show: {
     opacity: 1,

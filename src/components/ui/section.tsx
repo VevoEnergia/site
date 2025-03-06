@@ -12,7 +12,7 @@ export default function Section({ id, children, className }: SectionProps) {
       id={id}
       className={`${className} w-screen px-6 sm:px-8 lg:px-32 2xl:px-60 2xl:py-16 py-8 snap-start`}
     >
-      {children}
+      <div className="max-w-[1920px] mx-auto">{children}</div>
     </section>
   );
 }

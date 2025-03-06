@@ -8,8 +8,8 @@ import Image from "next/image";
 export default function OurProjects() {
   const duplicatedProjects = [...projects, ...projects];
   return (
-    <Section className="bg-gradient-to-br from-primary from-50% to-yellow-600 space-y-8">
-      <Subtitle className="sm:text-4xl xl:text-5xl 2xl:text-6xl text-secondary">
+    <Section className="bg-gradient-to-br from-primary from-50% to-yellow-600">
+      <Subtitle className="sm:text-4xl xl:text-5xl 2xl:text-6xl text-secondary my-8">
         Atendemos sua Necessidade<span className="text-white">.</span>
       </Subtitle>
       <div className="flex items-start gap-x-12">
@@ -17,7 +17,7 @@ export default function OurProjects() {
           <PlaceCard key={`place-${index}`} text={place.text} src={place.src} />
         ))}
       </div>
-      <Subtitle className="sm:text-4xl xl:text-5xl 2xl:text-6xl text-secondary mt-10">
+      <Subtitle className="sm:text-4xl xl:text-5xl 2xl:text-6xl text-secondary my-8">
         Nossos Projetos<span className="text-white">.</span>
       </Subtitle>
       <div className="flex">
@@ -39,7 +39,7 @@ export default function OurProjects() {
         </div>
       </div>
 
-      <div className="w-full grid place-items-center">
+      <div className="w-full grid place-items-center m-12">
         <CTAButton
           variant="ghost"
           text="Quero minha energia solar!"

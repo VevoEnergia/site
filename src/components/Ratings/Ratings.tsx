@@ -6,7 +6,7 @@ export default function Ratings() {
   return (
     <Section
       id="depoimentos"
-      className="!max-h-[480px] !px-0 !min-h-96 bg-neutral-100 !pb-32 drop-shadow-lg"
+      className="!max-h-[480px] !px-0 !min-h-96 bg-neutral-100 !pb-32"
     >
       <Subtitle className="ms-6 sm:ms-8 lg:ms-32 2xl:ms-60 text-5xl xl:text-6xl text-secondary">
         Depoimentos<span className="text-primary">.</span>
