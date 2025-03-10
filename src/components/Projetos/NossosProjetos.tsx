@@ -12,7 +12,7 @@ export default function OurProjects() {
       <Subtitle className="sm:text-4xl xl:text-5xl 2xl:text-6xl text-secondary my-8">
         Atendemos sua Necessidade<span className="text-white">.</span>
       </Subtitle>
-      <div className="flex items-start gap-x-12">
+      <div className="grid grid-cols-5 gap-x-12">
         {places.map((place, index) => (
           <PlaceCard key={`place-${index}`} text={place.text} src={place.src} />
         ))}

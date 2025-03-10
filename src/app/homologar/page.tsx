@@ -20,7 +20,7 @@ export default function Page() {
           <Image
             width={960}
             height={1280}
-            src={"/homologar/paineis.jfif"}
+            src={"/homologar/paineis.jpg"}
             alt="Imagem de cima de painéis solares."
             className="w-auto h-auto absolute right-1/2 bottom-1/2 translate-x-1/2 translate-y-1/2"
           />

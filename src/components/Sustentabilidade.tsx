@@ -10,7 +10,7 @@ export default function Sustentabilidade() {
       id="sustentabilidade"
       className="bg-white flex items-center justify-between snap-mandatory !px-0"
     >
-      <div className="relative bg-secondary w-full flex items-start justify-between px-6 sm:px-8 lg:px-32 2xl:px-60 py-8 2xl:h-[600px]">
+      <div className="relative bg-secondary w-full flex items-start justify-between px-6 sm:px-8 lg:px-32 2xl:px-60 py-8 h-[600px] 2xl:h-[600px]">
         <div className="space-y-6 basis-1/2">
           <Subtitle className="text-primary text-3xl sm:text-5xl xl:text-6xl min-[1700px]:text-8xl font-black w-3/4 text-wrap">
             Energia acessível e limpa<span className="text-white">.</span>

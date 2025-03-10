@@ -1,3 +1,4 @@
+"use client";
 import { cn } from "@/lib/utils";
 
 interface CTAButtonProps {
@@ -11,13 +12,20 @@ export default function CTAButton({
   variant = "filled",
   className,
 }: CTAButtonProps) {
+  const handleClick = () => {
+    window.open(
+      "https://wa.me/5561999072808/?text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%21"
+    );
+  };
+
   return (
     <button
       data-variant={variant}
       className={cn(
-        "drop-shadow-[0px_4px_4px_#00000040] data-[variant=filled]:bg-primary data-[variant=filled]:text-white data-[variant=outline]:bg-transparent data-[variant=outline]:text-primary data-[variant=ghost]:bg-white data-[variant=ghost]:text-secondary rounded-full text-xs sm:text-base xl:text-2xl py-4 px-5 font-bold w-2/3 min-w-fit text-center hover:scale-105 transition-all duration-300",
+        "drop-shadow-[0px_4px_4px_#00000040] data-[variant=filled]:bg-primary data-[variant=filled]:text-white data-[variant=outline]:bg-transparent data-[variant=outline]:text-primary data-[variant=ghost]:bg-white data-[variant=ghost]:text-secondary rounded-full text-xs sm:text-sm 2xl:text-2xl py-2 px-4 2xl:py-4 2xl:px-5 font-bold w-2/3 min-w-fit text-center hover:scale-105 transition-all duration-300",
         className
       )}
+      onClick={handleClick}
     >
       {text}
     </button>

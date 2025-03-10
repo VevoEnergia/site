@@ -8,16 +8,18 @@ interface PlaceCardProps {
 
 export default function PlaceCard({ src, text }: PlaceCardProps) {
   return (
-    <div className="bg-gradient-to-br from-white to-neutral-200 rounded-xl p-4 drop-shadow-lg flex flex-col items-center justify-center w-72">
+    <div className=" rounded-xl p-4 drop-shadow-lg flex flex-col items-center justify-end w-48 2xl:w-60">
       <Image
         src={src}
-        width={140}
-        height={140}
+        width={512}
+        height={512}
         alt={`Ícone de ${text}`}
-        className="w-40 h-36"
+        className="w-full h-auto"
       />
 
-      <Subtitle className="text-neutral-700 mt-6">{text}</Subtitle>
+      <Subtitle className="text-secondary mt-6 text-sm xl:text-lg 2xl:text-2xl bg-white rounded-lg px-2 font-bold">
+        {text}
+      </Subtitle>
     </div>
   );
 }

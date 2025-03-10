@@ -1,5 +1,5 @@
 export default function HeroVideo({ isMobile }: { isMobile: boolean }) {
-  const videoUrl = isMobile ? "/hero/mobile.webm" : "/hero/desktop.webm";
+  const videoUrl = isMobile ? "/hero/mobile.webm" : "/hero/desktop.mp4";
 
   return (
     <video

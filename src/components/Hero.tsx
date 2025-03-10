@@ -10,6 +10,7 @@ export default async function Hero() {
   const isMobile = Boolean(
     userAgent.match(/Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i)
   );
+
   return (
     <Section
       id="hero"

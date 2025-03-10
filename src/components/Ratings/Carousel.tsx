@@ -15,7 +15,7 @@ export default function Carouse() {
       opts={{
         align: "center",
       }}
-      className="ms-40 w-[80%]"
+      className="xl:ms-32 2xl:ms-40 w-[80%]"
     >
       <CarouselPrevious />
       <CarouselContent>
@@ -23,7 +23,7 @@ export default function Carouse() {
           ratings.map((rating) => (
             <CarouselItem
               key={`rating-${rating.name}`}
-              className="basis-1 md:basis-1/2 pl-24 py-4"
+              className="basis-1/1 xl:basis-1/2 2xl:pl-24 py-4 w-full"
             >
               <Rating rating={rating} />
             </CarouselItem>

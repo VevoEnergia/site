@@ -12,7 +12,7 @@ interface RatingProps {
 
 export default function Rating({ rating }: { rating: RatingProps }) {
   return (
-    <div className="relative bg-white px-10 py-8 flex items-start justify-center gap-x-8 border rounded-xl shadow-md">
+    <div className="relative bg-white px-6 2xl:px-10 py-8 flex items-start justify-center gap-x-8 border rounded-xl shadow-md">
       <div className="flex flex-col items-center justify-center gap-y-3 min-w-32">
         <Image
           className="rounded-xl drop-shadow-md object-cover object-center w-32 h-32"
@@ -22,7 +22,9 @@ export default function Rating({ rating }: { rating: RatingProps }) {
           height={400}
           alt={`Icone de avaliação`}
         />
-        <Subtitle className="text-center text-xl">{rating.name}</Subtitle>
+        <Subtitle className="text-center text-xl text-nowrap">
+          {rating.name}
+        </Subtitle>
         <div className="flex gap-x-2 items-center justify-center">
           {Array(5)
             .fill(0)

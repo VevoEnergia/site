@@ -24,10 +24,10 @@ export default function Beneficios() {
             className="basis-1/1 sm:basis-1/2 xl:basis-1/3"
           >
             <ExpandableCard src={benefit.src}>
-              <Subtitle className="text-base md:text-lg xl:text-2xl 2xl:text-3xl mb-4 text-white">
+              <Subtitle className="text-base md:text-lg xl:text-2xl 2xl:text-3xl mb-4 text-secondary">
                 {benefit.title}
               </Subtitle>
-              <Paragraph className="text-xs lg:text-sm group-hover:opacity-100 opacity-0 transition-all duration-300 overflow-hidden text-white">
+              <Paragraph className="text-xs lg:text-sm group-hover:opacity-100 opacity-0 transition-all duration-300 overflow-hidden text-black">
                 {benefit.text}
               </Paragraph>
             </ExpandableCard>
