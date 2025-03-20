@@ -12,7 +12,7 @@ interface RatingProps {
 
 export default function Rating({ rating }: { rating: RatingProps }) {
   return (
-    <div className="relative bg-white px-6 2xl:px-10 py-8 flex items-start justify-center gap-x-8 border rounded-xl shadow-md">
+    <div className="relative bg-white px-6 2xl:px-10 py-8 flex flex-col items-center lg:flex-row lg:items-start justify-center gap-x-8 border rounded-xl shadow-md">
       <div className="flex flex-col items-center justify-center gap-y-3 min-w-32">
         <Image
           className="rounded-xl drop-shadow-md object-cover object-center w-32 h-32"
@@ -41,7 +41,7 @@ export default function Rating({ rating }: { rating: RatingProps }) {
         </div>
       </div>
       <Paragraph className="text-md z-[99999]">{rating.text}</Paragraph>
-      <RxQuote className="text-7xl absolute bottom-8 right-8 z-[9999] opacity-80 text-secondary" />
+      <RxQuote className="text-7xl absolute bottom-0 right-0 lg:bottom-8 lg:right-8 z-[9999] opacity-50 lg:opacity-80 text-secondary" />
     </div>
   );
 }

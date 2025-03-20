@@ -11,7 +11,7 @@ export default function SolutionCard({
   text: string;
 }) {
   return (
-    <div className="flex items-center border rounded-md drop-shadow-sm p-4 bg-secondary text-white">
+    <div className="flex items-center border drop-shadow-sm p-4 bg-secondary text-white rounded-[20px] shadow-lg shadow-black/20 border-none">
       <Image
         width={80}
         height={80}

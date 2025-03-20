@@ -15,7 +15,7 @@ export default function Carouse() {
       opts={{
         align: "center",
       }}
-      className="xl:ms-32 2xl:ms-40 w-[80%]"
+      className="mx-8 xl:ms-32 2xl:ms-40 w-[80%]"
     >
       <CarouselPrevious />
       <CarouselContent>

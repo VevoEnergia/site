@@ -1,4 +1,10 @@
-export const solutions = [
+type Solution = {
+  src: string;
+  title: string;
+  text: string;
+};
+
+export const solutions: Solution[] = [
   {
     src: "/solucoes/analise-energetica.png",
     title: "Análise Energética",

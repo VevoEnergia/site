@@ -34,11 +34,6 @@ const data = {
         url: "https://wa.me/5561999072808/?text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%21",
         icon: <ClickableIcon Icon={FaWhatsapp} color="#25D366" delay={0.3} />,
       },
-      // {
-      //   clickable: true,
-      //   url: "/",
-      //   icon: <ClickableIcon Icon={FcGoogle} color="#ffffff" delay={0.5} />,
-      // },
     ],
   },
   certifications: {
@@ -102,7 +97,7 @@ const data = {
 };
 export default function AdditionalData() {
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 mt-12 lg:mt-0">
       <DataWrapper
         title={data.socialNetworks.title}
         clickableImages={data.socialNetworks.clickableImages}
@@ -115,6 +110,10 @@ export default function AdditionalData() {
         title={data.financing.title}
         clickableImages={data.financing.clickableImages}
       />
+
+      <Subtitle className="lg:hidden text-xl font-medium mt-12">
+        VEVO. <span className="text-sm lg:text-base">Direitos Reservados.</span>
+      </Subtitle>
     </div>
   );
 }
@@ -122,7 +121,7 @@ export default function AdditionalData() {
 function DataWrapper({ title, clickableImages }: DataProps) {
   return (
     <div className="space-y-3">
-      <Subtitle className="text-secondary">
+      <Subtitle className="text-secondary !text-2xl">
         {title.slice(0, -1)}
         <strong className="text-primary">{title.slice(-1)}</strong>
       </Subtitle>

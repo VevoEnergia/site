@@ -31,15 +31,15 @@ export default function Question({ question, answer, rev = 1 }: QuestionProps) {
       initial="hide"
       whileInView="show"
       variants={introQuestion}
-      className="px-4 2xl:px-12 2xl:py-4 py-2 w-3/4 shadow-md rounded-lg even:ms-auto cursor-pointer hover:shadow-lg transition-all duration-300 bg-primary"
+      className="px-4 2xl:px-12 2xl:py-4 py-2 w-[90%] lg:w-3/4 shadow-md rounded-lg even:ms-auto cursor-pointer hover:shadow-lg transition-all duration-300 bg-primary"
       onClick={() => setIsHidden(!isHidden)}
     >
       <div className="flex items-center gap-x-4">
         <IoArrowDown
-          className="2xl:text-3xl data-[active=true]:-rotate-90 transition-all duration-300"
+          className="!text-2xl 2xl:text-3xl data-[active=true]:-rotate-90 transition-all duration-300"
           data-active={isHidden}
         />
-        <Subtitle className="!text-lg">{question}</Subtitle>
+        <Subtitle className="!text-base xl:!text-lg">{question}</Subtitle>
       </div>
 
       <div

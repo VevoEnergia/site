@@ -2,7 +2,7 @@ export const ratings = [
   {
     name: "Marcelo T.",
     rating: 5,
-    text: "Desde o primeiro contato, a equipe da Vevo foi extremamente atenciosa e profissional. Agora, minha conta de luz caiu drasticamente! Super recomendo!",
+    text: "Instalei energia solar com a Vevo e foi uma das melhores escolhas que já fiz! A economia na conta de luz é excelente e o atendimento da equipe foi ótimo. Super recomendo!",
   },
   {
     name: "Fernanda L.",

@@ -7,12 +7,12 @@ interface NavLinkProps {
 
 export default function NavLinks() {
   return (
-    <ul className="flex items-center justify-center gap-x-12">
-      <NavLink href="#beneficios" text="Benefícios" />
-      <NavLink href="#solucoes" text="Soluções" />
-      <NavLink href="#depoimentos" text="Depoimentos" />
+    <ul className="hidden lg:flex items-center justify-center gap-x-12">
+      <NavLink href="/#beneficios" text="Benefícios" />
+      <NavLink href="/#solucoes" text="Soluções" />
+      <NavLink href="/#depoimentos" text="Depoimentos" />
       <NavLink href="/homologar" text="Homologar" />
-      <NavLink href="#contato" text="Contato" />
+      <NavLink href="/#contato" text="Contato" />
     </ul>
   );
 }

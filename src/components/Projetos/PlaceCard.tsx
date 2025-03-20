@@ -17,7 +17,7 @@ export default function PlaceCard({ src, text }: PlaceCardProps) {
         className="w-full h-auto"
       />
 
-      <Subtitle className="text-secondary mt-6 text-sm xl:text-lg 2xl:text-2xl bg-white rounded-lg px-2 font-bold">
+      <Subtitle className="text-secondary mt-6 text-[20px] 2xl:text-2xl bg-white rounded-lg px-4 font-bold">
         {text}
       </Subtitle>
     </div>
