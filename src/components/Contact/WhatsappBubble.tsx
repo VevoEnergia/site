@@ -15,7 +15,6 @@ export default function WhatsappBubble() {
     <motion.div
       animate={{
         opacity: [0, 1],
-        x: [100, 0],
         scale: [0, 1],
       }}
       transition={{

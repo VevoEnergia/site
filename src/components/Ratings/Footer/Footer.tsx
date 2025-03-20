@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer
       id="contato"
-      className="!min-h-96 w-screen px-6 sm:px-8 lg:px-32 2xl:px-60 2xl:py-16 py-8 snap-start  bg-neutral-200 !pb-8"
+      className="!min-h-96 w-screen px-6 sm:px-8 lg:px-32 2xl:px-60 2xl:py-16 py-8 snap-start bg-neutral-200 !pb-8 max-w-screen overflow-x-hidden"
     >
       <div className="mx-auto max-w-[1920px] flex flex-col lg:grid grid-cols-[2fr_1fr] grid-rows-1 gap-x-24">
         <div className="flex flex-col items-start justify-between h-full">

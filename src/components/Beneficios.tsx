@@ -63,7 +63,7 @@ export default function Beneficios() {
                     <Subtitle className="!text-xl xl:!text-3xl text-secondary !font-bold">
                       Economia Anual
                     </Subtitle>
-                    <Subtitle className="!text-5xl text-secondary font-light">
+                    <Subtitle className="!text-4xl lg:!text-5xl text-secondary font-light">
                       R$
                       <Span className="!font-black !text-secondary font-sans group-hover:text-primary">
                         {sav.yearlyEconomy.slice(

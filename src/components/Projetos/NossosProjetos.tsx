@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function OurProjects() {
   const duplicatedProjects = [...projects, ...projects];
   return (
-    <Section className="bg-gradient-to-br from-primary from-50% to-yellow-600">
+    <Section className="bg-gradient-to-br from-primary from-50% to-yellow-600 !overflow-x-hidden">
       <Subtitle className="!text-3xl sm:!text-4xl xl:!text-5xl 2xl:!text-6xl text-secondary lg:my-8">
         Atendemos sua Necessidade<span className="text-white">.</span>
       </Subtitle>
