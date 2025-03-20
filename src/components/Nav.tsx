@@ -51,7 +51,7 @@ export default function Nav() {
           width={150}
           height={52}
           alt="Logo da Vevo Energia Fotovoltaica."
-          className="object-center h-full w-auto scale-125"
+          className="object-center h-full w-auto scale-125 lg:scale-100"
         />
       </Link>
       <NavLinks />
