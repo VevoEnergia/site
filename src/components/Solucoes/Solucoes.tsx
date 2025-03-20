@@ -5,7 +5,6 @@ import SolutionCard from "./SolutionCard";
 import Image from "next/image";
 // Data
 import { solutions } from "@/data/solucoes";
-import { title } from "process";
 
 export default function Solucoes() {
   return (

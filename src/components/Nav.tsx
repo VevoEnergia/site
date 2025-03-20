@@ -8,7 +8,6 @@ import HamburguerMenu from "./HamburguerMenu";
 export default function Nav() {
   const [scrollingDown, setScrollingDown] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [isTouching, setIsTouching] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,9 +16,9 @@ export default function Nav() {
       setLastScrollY(currentScrollY);
     };
 
-    const handleTouchMove = (event: Event) => {
+    const handleTouchMove = () => {
       const currentScrollY = window.scrollY;
-      setScrollingDown(currentScrollY > lastScrollY && currentScrollY > 10);
+      setScrollingDown(currentScrollY > lastScrollY && currentScrollY > 1);
       setLastScrollY(currentScrollY);
     };
 
@@ -28,13 +27,11 @@ export default function Nav() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("touchstart", () => setIsTouching(true));
     window.addEventListener("touchmove", handleTouchMove);
     window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("touchstart", () => setIsTouching(true));
       window.removeEventListener("touchmove", handleTouchMove);
       window.removeEventListener("resize", handleResize);
     };
@@ -54,7 +51,7 @@ export default function Nav() {
           width={150}
           height={52}
           alt="Logo da Vevo Energia Fotovoltaica."
-          className="object-center h-full w-auto scale-125 lg:scale-100"
+          className="object-center h-full w-auto scale-125"
         />
       </Link>
       <NavLinks />

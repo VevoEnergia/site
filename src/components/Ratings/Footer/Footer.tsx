@@ -3,7 +3,6 @@ import { Subtitle } from "../../ui/text";
 import ContactItem from "./ContactItem";
 import { MdMailOutline } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
-import { LuMapPin } from "react-icons/lu";
 
 import AdditionalData from "./AdditionalData";
 

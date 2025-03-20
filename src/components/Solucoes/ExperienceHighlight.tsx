@@ -1,4 +1,4 @@
-import { Title, Span, Subtitle } from "@/components/ui/text";
+import { Span, Subtitle } from "@/components/ui/text";
 import Image from "next/image";
 
 export default function ExperienceHighlight({
