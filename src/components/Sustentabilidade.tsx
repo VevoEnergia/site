@@ -27,7 +27,7 @@ export default function Sustentabilidade() {
             variant="filled"
           />
         </div>
-        <div className="relative overflow-hidden shadow-xl shadow-black/20 rounded-[60px] mx-auto w-full h-[400px] lg:w-[600px] lg:h-[650px]">
+        <div className="overflow-hidden shadow-xl shadow-black/20 rounded-[60px] mx-auto w-full h-[400px] lg:w-[600px] lg:h-[650px]">
           <Image
             width={960}
             height={1280}

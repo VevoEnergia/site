@@ -31,7 +31,7 @@ export const saving = [
     cta: "Descubra sua solução solar!",
   },
   {
-    src: "/economia/2.jpg",
+    src: "/economia/2.webp",
     client: "Cecilia Andrade",
     localization: "Jardim Botânico",
     yearlyEconomy: "21.600,00",
