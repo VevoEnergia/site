@@ -12,7 +12,7 @@ export function OrderedListItem({
   text: string;
 }) {
   return (
-    <li className="grid grid-cols-[48px_1fr] items-end text-lg">
+    <li className="grid grid-cols-[48px_1fr] items-start text-lg">
       <Heading className="text-3xl !font-bold text-secondary">
         {index}
         <span className="text-primary">.</span>

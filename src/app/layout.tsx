@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${poppins.variable} ${roboto.variable} antialiased bg-white !overflow-x-hidden `}
+        className={`${poppins.variable} ${roboto.variable} antialiased bg-white relative`}
       >
         <Nav />
         {children}

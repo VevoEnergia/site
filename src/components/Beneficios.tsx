@@ -9,7 +9,7 @@ import CTAButton from "./ui/cta-button";
 
 export default function Beneficios() {
   return (
-    <Section id="beneficios" className="py-12 bg-white">
+    <Section id="beneficios" className="py-12 bg-white overflow-x-hidden">
       <Subtitle className="!text-3xl sm:!text-4xl xl:!text-5xl 2xl:!text-6xl text-secondary">
         Benefícios<span className="text-primary">.</span>
       </Subtitle>

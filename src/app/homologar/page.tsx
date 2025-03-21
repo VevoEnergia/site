@@ -1,5 +1,5 @@
 import { OrderedList, OrderedListItem } from "@/components/ui/list";
-import { Heading, Paragraph, Subtitle, Title } from "@/components/ui/text";
+import { Heading, Paragraph, Title } from "@/components/ui/text";
 import Image from "next/image";
 
 export default function Page() {
@@ -15,7 +15,7 @@ export default function Page() {
         tornando essa opção acessível e vantajosa. Vamos entender o processo e
         seus benefícios?
       </Paragraph>
-      <div className="grid grid-cols-2 gap-x-12 w-full">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-12 gap-y-8 w-full">
         <div className="h-96 overflow-hidden rounded-2xl shadow-xl relative">
           <Image
             width={960}
@@ -26,9 +26,9 @@ export default function Page() {
           />
         </div>
         <div className="space-y-6">
-          <Subtitle className="text-4xl text-secondary">
+          <Heading className="text-4xl text-secondary">
             O que é a homologação<span className="text-primary">?</span>
-          </Subtitle>
+          </Heading>
           <Paragraph>
             A homologação de sistemas fotovoltaicos é um processo em que a
             distribuidora de energia verifica se o sistema solar instalado
@@ -43,7 +43,7 @@ export default function Page() {
         </div>
       </div>
       <div className="mt-10 space-y-6">
-        <Heading className="text-4xl text-secondary">
+        <Heading className="!text-4xl text-secondary">
           O processo de homologação segue estes passos
           <span className="text-primary">:</span>
         </Heading>

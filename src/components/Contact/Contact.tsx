@@ -38,7 +38,7 @@ const introTitle: Variants = {
 export default function Contact() {
   return (
     <Section
-      className="lg:h-[480px] 2xl:min-h-[800px] relative bg-secondary"
+      className="lg:h-[480px] 2xl:min-h-[800px] relative bg-secondary overflow-x-hidden"
       containerClassName="flex flex-col xl:grid grid-cols-2 grid-rows-1 gap-x-24"
     >
       <div className="flex flex-col items-start justify-start gap-y-4 2xl:gap-y-7 lg:mt-14">

@@ -19,7 +19,7 @@ export default function Section({
       className={`${className} w-screen px-6 sm:px-8 lg:px-32 2xl:px-60 2xl:py-16 py-8 snap-start max-w-screen`}
     >
       <div
-        className={`${containerClassName} overflow-y-visible max-w-[1920px] mx-auto`}
+        className={`${containerClassName} max-w-[1920px] mx-auto`}
         style={{ overflowY: "visible" }}
       >
         {children}

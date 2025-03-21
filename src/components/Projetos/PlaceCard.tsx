@@ -8,7 +8,7 @@ interface PlaceCardProps {
 
 export default function PlaceCard({ src, text }: PlaceCardProps) {
   return (
-    <div className=" rounded-xl p-4 drop-shadow-lg flex flex-col items-center justify-end w-48 2xl:w-60">
+    <div className=" rounded-xl p-4 drop-shadow-lg flex flex-col items-center justify-end w-36 xl:w-60">
       <Image
         src={src}
         width={512}
