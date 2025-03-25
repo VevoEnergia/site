@@ -14,8 +14,9 @@ export const questions = [
     answer: "Entre 2 a 7 anos, dependendo do consumo e do sistema instalado.",
   },
   {
-    question: "A instalação é demorada?",
-    answer: "Não! Em média, leva de 1 a 3 dias.",
+    question: "Quanto tempo dura o processo até a instalação?",
+    answer:
+      "A homologação leva de 25 a 35 dias. A instalação é feita após o parecer de acesso e dura de 1 a 7 dias, dependendo do projeto e da quantidade de módulos.",
   },
   {
     question: "Precisa de manutenção?",
