@@ -16,7 +16,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`${className} w-screen px-6 sm:px-8 lg:px-32 2xl:px-60 2xl:py-16 py-8 snap-start max-w-screen`}
+      className={`${className} w-[100dvw] px-6 sm:px-8 lg:px-32 2xl:px-60 2xl:py-16 py-8 snap-start max-w-[100dvw]`}
     >
       <div
         className={`${containerClassName} max-w-[1920px] mx-auto`}
