@@ -24,12 +24,12 @@ export default function Footer() {
             />
           </div>
 
-          <Subtitle className="!text-2xl text-secondary max-w-xs lg:max-w-xl">
+          <Subtitle className="text-lg lg:!text-2xl text-secondary max-w-xs lg:max-w-xl">
             Invista em Energia Solar e Economize na Sua Conta de Luz
             <span className="text-primary">!</span>
           </Subtitle>
 
-          <div className="space-y-4 mt-16">
+          <div className="space-y-4 mt-8 lg:mt-16">
             <ContactItem
               Icon={FaWhatsapp}
               title="Ligue Agora!"

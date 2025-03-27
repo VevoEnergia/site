@@ -38,18 +38,18 @@ const introTitle: Variants = {
 export default function Contact() {
   return (
     <Section
-      className="lg:h-[480px] 2xl:min-h-[800px] relative bg-secondary overflow-x-hidden"
+      className="2xl:min-h-[800px] relative bg-secondary overflow-x-hidden"
       containerClassName="flex flex-col xl:grid grid-cols-2 grid-rows-1 gap-x-24"
     >
       <div className="flex flex-col items-start justify-start gap-y-4 2xl:gap-y-7 lg:mt-14">
         <motion.div initial="hide" whileInView="show" variants={introTitle}>
-          <Subtitle className="text-start !text-3xl 2xl:!text-5xl w-full text-white font-black">
+          <Subtitle className="text-start !text-3xl md:!text-4xl 2xl:!text-5xl w-full text-white font-black">
             Invista em Energia Solar e Economize na Sua Conta de Luz!
             <span className="text-primary">.</span>
           </Subtitle>
         </motion.div>
 
-        <p className="text-xs 2xl:text-2xl w-full text-wrap text-neutral-50">
+        <p className="text-xs md:text-base 2xl:text-2xl w-full text-wrap text-neutral-50">
           <strong>Pare de pagar caro na energia!</strong>
           <br></br> Com a Vevo Energia, você reduz seus gastos, valoriza seu
           imóvel e ainda contribui para um futuro sustentável. Solicite um

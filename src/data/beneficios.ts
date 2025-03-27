@@ -1,6 +1,6 @@
 export const benefits = [
   {
-    src: "/eco.svg",
+    src: "/ecologico.svg",
     title: "Sustentabilidade",
     text: "A energia solar é uma fonte limpa e renovável, reduzindo a emissão de gases poluentes e ajudando na preservação do meio ambiente para as futuras gerações.",
   },

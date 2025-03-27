@@ -12,8 +12,7 @@ export default async function Hero() {
 
   const result = parser.getResult();
 
-  const isMobile =
-    result.device.type === "mobile" || result.device.type === "tablet";
+  const isMobile = true;
 
   return (
     <Section
