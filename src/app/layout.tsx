@@ -29,9 +29,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="pt-br" className="scroll-smooth">
       <body
-        className={`${poppins.variable} ${roboto.variable} antialiased bg-white relative`}
+        className={`${poppins.variable} ${roboto.variable} antialiased bg-white relative overflow-x-hidden`}
       >
         <Nav />
         {children}

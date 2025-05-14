@@ -8,7 +8,7 @@ export default function Sustentabilidade() {
   return (
     <Section
       id="sustentabilidade"
-      className="flex items-center justify-between snap-mandatory !px-0 bg-secondary w-full"
+      className="flex items-center justify-between snap-mandatory !px-0 bg-secondary min-w-full"
     >
       <div className="relative flex flex-col-reverse gap-y-8 lg:flex-row items-start justify-between px-6 sm:px-8 lg:px-32 2xl:px-60 py-8 lg:h-[520px]">
         <div className="space-y-6 basis-1/2">

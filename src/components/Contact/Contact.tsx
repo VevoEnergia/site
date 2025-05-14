@@ -2,8 +2,8 @@
 import { motion, Variants } from "framer-motion";
 import Section from "../ui/section";
 import { Subtitle } from "../ui/text";
-import CTAButton from "../ui/cta-button";
 import Image from "next/image";
+import ContactForm from "../ui/contact-form";
 
 const introContact: Variants = {
   hide: {
@@ -19,18 +19,20 @@ const introContact: Variants = {
   },
 };
 
-const introTitle: Variants = {
+const yellowBg: Variants = {
   hide: {
+    x: "0%",
+    y: "-40%",
+    rotate: 15,
     opacity: 0,
-    y: 100,
-    color: "#ffffffff",
   },
   show: {
-    color: "#000",
+    x: "0%",
+    rotate: 15,
+    y: "-50%",
     opacity: 1,
-    y: 0,
     transition: {
-      duration: 1.8,
+      duration: 1.3,
     },
   },
 };
@@ -38,43 +40,39 @@ const introTitle: Variants = {
 export default function Contact() {
   return (
     <Section
-      className="2xl:min-h-[800px] relative bg-secondary overflow-x-hidden"
-      containerClassName="flex flex-col xl:grid grid-cols-2 grid-rows-1 gap-x-24"
+      className="relative bg-secondary min-w-full overflow-hidden"
+      id="contact-form"
     >
-      <div className="flex flex-col items-start justify-start gap-y-4 2xl:gap-y-7 lg:mt-14">
-        <motion.div initial="hide" whileInView="show" variants={introTitle}>
-          <Subtitle className="text-start !text-3xl md:!text-4xl 2xl:!text-5xl w-full text-white font-black">
-            Invista em Energia Solar e Economize na Sua Conta de Luz!
-            <span className="text-primary">.</span>
-          </Subtitle>
-        </motion.div>
+      <Subtitle className="text-start !text-3xl md:!text-4xl 2xl:!text-5xl max-w-2xl text-white font-black mb-8 relative z-10">
+        Invista em Energia Solar e Economize na Sua Conta de Luz!
+        <span className="text-white xl:text-primary">.</span>
+      </Subtitle>
 
-        <p className="text-xs md:text-base 2xl:text-2xl w-full text-wrap text-neutral-50">
-          <strong>Pare de pagar caro na energia!</strong>
-          <br></br> Com a Vevo Energia, você reduz seus gastos, valoriza seu
-          imóvel e ainda contribui para um futuro sustentável. Solicite um
-          orçamento e comece a economizar hoje mesmo!
-        </p>
-        <CTAButton
-          text="Fale com um Especialista Agora!"
-          className="xl:mt-6 !text-base lg:!text-xl"
-        />
+      <div className="grid grid-cols-1 lg:grid-cols-2 bg-white w-full rounded-2xl overflow-hidden shadow-lg shadow-black/20 border-none lg:col-span-2 border drop-shadow-sm mt-8 relative z-10">
+        <ContactForm />
+
+        <motion.div
+          initial="hide"
+          whileInView="show"
+          variants={introContact}
+          className="hidden lg:block h-full overflow-hidden"
+        >
+          <Image
+            src={"/contact/paineis-solares.jpg"}
+            width={1280}
+            height={720}
+            className="object-cover object-center w-auto h-full"
+            alt="Vista de cima de uma casa moderna que contém paineis solares."
+          />
+        </motion.div>
       </div>
 
       <motion.div
         initial="hide"
         whileInView="show"
-        variants={introContact}
-        className="mt-10 top-10 rounded-[50px] xl:w-[700px] 2xl:w-[1075px] 2xl:h-[720px] overflow-hidden bg-cover"
-      >
-        <Image
-          src={"/contact/paineis-solares.jpg"}
-          width={1280}
-          height={720}
-          className="object-center rounded-[50px] lg:rounded-l-[50px] w-full h-auto"
-          alt="Vista de cima de uma casa moderna que contém paineis solares."
-        />
-      </motion.div>
+        variants={yellowBg}
+        className="w-[200%] h-[400%] absolute bg-gradient-to-br from-primary to-90% to-[#aa6600] top-1/2 left-2/3 xl:left-[60%] -translate-y-1/2 z-0"
+      ></motion.div>
     </Section>
   );
 }

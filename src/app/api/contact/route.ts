@@ -18,10 +18,8 @@ export const POST = async (request: NextRequest) => {
     }
 
     const TRELLO_API_URL = `https://api.trello.com/1/cards?key=${API_KEY}&token=${TOKEN}&idList=${LIST_ID}&name=${encodeURIComponent(
-      "Contato no Site"
+      `Contato no Site - ${name}`
     )}&desc=${encodeURIComponent(mountText({ name, email, phone, message }))}`;
-
-    console.log("Trello API URL:", TRELLO_API_URL);
 
     const response = await fetch(TRELLO_API_URL, {
       method: "POST",

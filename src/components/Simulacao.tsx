@@ -1,16 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 interface SimulacaoProps {
   className?: string;
 }
 
 export default function Simulacao({ className }: SimulacaoProps) {
+  const router = useRouter();
   const handleClick = () => {
-    window.open(
-      "https://wa.me/5561999072808/?text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%21"
-    );
+    router.push("/#contact-form");
   };
   return (
     <motion.button

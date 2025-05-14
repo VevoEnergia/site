@@ -31,7 +31,7 @@ export default function OurProjects() {
                 src={project.src}
                 alt={`Imagem do projeto ${index}, com vista superior mostrando painéis solares.`}
                 fill
-                sizes=""
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="rounded-[32px] object-cover"
               />
             </div>
