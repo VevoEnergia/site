@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Roboto } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Ratings/Footer/Footer";
 import WhatsappBubble from "@/components/Contact/WhatsappBubble";
+import GTM from "@/components/GTM";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className="scroll-smooth">
+      <GTM />
       <body
         className={`${poppins.variable} ${roboto.variable} antialiased bg-white relative overflow-x-hidden`}
       >
